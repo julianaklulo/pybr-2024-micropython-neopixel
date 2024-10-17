@@ -17,9 +17,9 @@ index = 0
 while True:
     np[index] = (0, 0, 0)
 
-    if button_a.was_pressed():
+    if button_a.is_pressed():
         index = (index - 1) % pixels
-    elif button_b.was_pressed():
+    elif button_b.is_pressed():
         index = (index + 1) % pixels
 
     np[index] = (255, 0, 0)
